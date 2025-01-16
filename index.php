@@ -8,7 +8,7 @@
         $token = bin2hex(random_bytes(32));
         # Stocker le jeton dans la session
         # Cross-Site Request Forgery (CSRF)
-        $_SESSION['csrf_token'] = $token; 
+        $_SESSION ['csrf_token'] = $token; 
         
         include_once __DIR__ ."/controller/config.inc.php";
        
