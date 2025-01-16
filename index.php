@@ -22,6 +22,7 @@
 <div class="form-action" role="group" aria-labelledby="form">
         <fieldset>
         <legend>Commencer par initialiser votre login et mot de passe</legend>
+
         <form method="post" action="traitement_form.php" id="form">
             <label for="login">Login : <em>Votre adresse mail</em></label>
             <input type="text" id="login" name="login" placeholder="Login" aria-required="true" autofocus>
