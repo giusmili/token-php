@@ -4,7 +4,7 @@ class Conntected{
 
     static function user_connected(){
                  
-            # Vérifier si le jeton CSRF est présent dans la requête
+        # Vérifier si le jeton CSRF est présent dans la requête
             if (isset($_POST['csrf_token']) && 
             isset($_SESSION['csrf_token']) && 
             $_POST['csrf_token'] === $_SESSION['csrf_token'] && 
@@ -12,12 +12,12 @@ class Conntected{
             &&  isset($_POST['mot_de_passe'])
             )
             {
-            # Le jeton CSRF est valide, traiter le formulaire en toute sécurité
-            # ... votre logique de traitement ici ...
+        # Le jeton CSRF est valide, traiter le formulaire en toute sécurité
+        # ... votre logique de traitement ici ...
             $_login = strip_tags($_POST['login']);
             $_pass = $_POST['mot_de_passe'];
 
-            # expression régulière pour obliger l'utilisateur à mettre un mot de passe plus robuste
+        # expression régulière pour obliger l'utilisateur à mettre un mot de passe plus robuste
             $regex = '/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/';
 
      
